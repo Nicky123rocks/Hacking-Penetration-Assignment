@@ -1,0 +1,182 @@
+/* Base Reset and Layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #f1f8e9, #e3f2fd);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 15px;
+    color: #333;
+}
+
+/* Main Centered Container */
+.container {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    max-width: 750px;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 85vh;
+}
+
+/* Titles */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1a237e;
+    font-size: 28px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Subheadings */
+h3, h4 {
+    color: #37474f;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #f9f9f9;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Buttons */
+input[type="submit"],
+button,
+.back-btn,
+a.button {
+    background-color: #388e3c;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    width: fit-content;
+    align-self: flex-start;
+}
+
+input[type="submit"]:hover,
+button:hover,
+.back-btn:hover,
+a.button:hover {
+    background-color: #2e7d32;
+}
+
+.back-btn {
+    background-color: #546e7a;
+    margin-top: auto;
+}
+
+/* Navigation List */
+ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #0d47a1;
+    font-weight: 500;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #4db6ac;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Forums & Posts */
+.forum-post, .mentorship-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+}
+
+img {
+    margin-top: 10px;
+    border-radius: 6px;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    table th, table td {
+        font-size: 14px;
+    }
+    input[type="submit"],
+    .back-btn {
+        width: 100%;
+    }
+}
